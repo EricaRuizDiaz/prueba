@@ -1,5 +1,5 @@
 let images = []; 
-let index = 0;   
+let pikachu = 0;   
 
 function preload() {
  
@@ -17,16 +17,16 @@ function setup() {
 
 function draw() {
   background(255);
-  if (images[index]) { 
-    image(images[index], 0, 0, width, height);
+  if (images[pikachu]) { 
+    image(images[pikachu], 0, 0, width, height);
   }
 }
 
 function nextImage() {
   // Avanza a la siguiente imagen o vuelve al inicio si es el final
   if (index < images.length - 1) {
-    index++;
+    pikachu++;
   } else {
-    index = 0;
+    pikachu = 0;
   }
 }
